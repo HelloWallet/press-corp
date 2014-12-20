@@ -1,0 +1,8 @@
+{
+    "packageType": "library",
+    "packagedDependencies": true,
+
+	"lib-package": {
+		"include": ["**/*", "!node_modules/**/*", "!deploy/**/*"]
+	}
+}

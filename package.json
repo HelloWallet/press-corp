@@ -1,0 +1,15 @@
+{
+  "name": "press-corp",
+  "version": "0.1.2",
+  "description": "Express middleware to unobfuscate and log client-side errors.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rick Bowman",
+  "license": "BSD",
+  "dependencies": {
+    "stack-trace": "0.0.9",
+    "source-map": "~0.1.33"
+  }
+}
