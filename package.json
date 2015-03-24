@@ -1,6 +1,10 @@
 {
   "name": "press-corp",
   "version": "0.1.4",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/HelloWallet/press-corp.git"
+  },
   "description": "Express middleware to unobfuscate and log client-side errors.",
   "main": "index.js",
   "scripts": {
