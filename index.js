@@ -165,6 +165,9 @@ module.exports = {
 
             logger.error(error.message + " [" + error.url + "]\n" + deobfuscatedTrace);
 
+            res.header("Cache-Control", "no-cache, no-store, must-revalidate");
+            res.header("Pragma", "no-cache");
+            res.header("Expires", 0);
             res.send({
                 logged: true
             });
@@ -185,6 +188,9 @@ module.exports = {
             var hdlr = logger[req.body.level.name.toLowerCase()],
                 messages = req.body.message;
 
+            res.header("Cache-Control", "no-cache, no-store, must-revalidate");
+            res.header("Pragma", "no-cache");
+            res.header("Expires", 0);
             res.send({
                 logged: true
             });
